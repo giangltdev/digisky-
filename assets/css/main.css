@@ -1,0 +1,237 @@
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    html,
+    a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+    }
+    /* Background video */
+    
+    video {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+    /* Header */
+    
+    #menu-icon i {
+        z-index: 1;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        font-size: 3rem;
+        cursor: pointer;
+        color: #1AFFD5;
+    }
+    
+    .menu-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        color: #FFF;
+        font-size: 2em;
+        text-align: center;
+        background-color: #272727;
+        z-index: 2;
+        visibility: hidden;
+        position: fixed;
+    }
+    
+    .menu-list-social {
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+    }
+    
+    .menu-list-social li:not(:first-child) {
+        margin-left: 20px;
+    }
+    
+    .menu-list-social li a {
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .menu-list-social li a:hover {
+        background-color: #FFF;
+        color: #000;
+        padding: 30px 10px;
+    }
+    
+    .menu-list-task {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .menu-list-task li:not(:first-child) {
+        margin-top: 40px;
+    }
+    
+    .menu-list-task li a {
+        color: #FFF;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        font-size: 35px;
+    }
+    
+    .menu-list-task li a:hover {
+        font-size: 45px;
+        cursor: pointer;
+    }
+    
+    .show {
+        visibility: visible;
+    }
+    
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        height: 100vh;
+        color: #1AFFD5;
+    }
+    
+    section#home {
+        background-color: tomato;
+    }
+    
+    section#sobre {
+        background-color: #7D83FF;
+    }
+    
+    section#portfolio {
+        background-color: #590925;
+    }
+    
+    section#contato {
+        background-color: #D4DCFF;
+        color: #000;
+    }
+    /* css menu */
+    
+    .icon-menu {
+        cursor: pointer;
+        width: 35px;
+        height: 20px;
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: 30px;
+        z-index: 3;
+    }
+    
+    .icon-menu span,
+    .icon-menu span:before,
+    .icon-menu span:after {
+        width: 35px;
+        height: 5px;
+        background: #FFF;
+        display: block;
+        content: '';
+        position: absolute;
+        transition: all 500ms ease-in-out;
+    }
+    
+    .icon-menu span:after {
+        top: -10px;
+    }
+    
+    .icon-menu span:before {
+        top: 10px;
+    }
+    
+    .icon-menu.active span:before,
+    .icon-menu.active span:after {
+        top: 0;
+    }
+    
+    .icon-menu.active span {
+        background-color: transparent;
+    }
+    
+    .icon-menu.active span:before {
+        transform: rotate(-45deg);
+    }
+    
+    .icon-menu.active span:after {
+        transform: rotate(45deg);
+    }
+    
+    .logo-menu {
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 30px;
+        z-index: 1;
+    }
+    
+    .logo-menu img {
+        max-width: 150px;
+    }
+    /* Block product */
+    
+    .product-container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .img-thumbnail {
+        padding: 0;
+        background-color: none;
+        border: none;
+    }
+    
+    .img-thumbnail:hover {
+        filter: brightness(0.4);
+        scale: 1.02;
+    }
+    
+    .img-thumbnail .product-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .product-list-container {
+        position: relative;
+        margin-top: 30px;
+    }
+    
+    .product-list-title {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        color: #fff;
+    }
+    
+    .product-list-title:hover {
+        font-size: 19px;
+        color: #fff;
+    }
